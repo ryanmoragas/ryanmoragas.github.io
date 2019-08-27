@@ -102,7 +102,7 @@ function printObjectValues(object) {
  */
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  //return the length of the objects' key/value pairs
+  //return the length of the object's key/value pairs
   var count = 0;
   for (var key in object) {
     count++;

@@ -64,7 +64,7 @@ object = {       //the object var is now assigned 2 values with 2 different keys
 * and execute it wherever we want, however many times we want. This lets us save time 
 * by not having to write a new code everytime we want to perform a certain action.
 */
-function (parameter) {
+function functionName (param) {
     //function body; code to execute goes here
 };
 // ^^ functions are given a name, parameters to use, and code to execute.
@@ -99,11 +99,9 @@ var absence = null; // here we are declaring a variable and deliberately nullify
 isNaN(2); // prints => false, since 2 is a number
 isNaN("two"); // prints => true, since the string of two is not a number
 
-// 10. Infinity and -Infinity //
-
-// 11. Primitive/simple and complex data types //
+// 10. Primitive/simple and complex data types //
 /*
-* The two main types of data types are classified as either simple/primitive or complex. 
+* The two types of data types are classified as either simple/primitive or complex. 
 * 
 * (1) Simple/primitive datatypes include numbers, strings, booleans, Nan, null, and undefined
 * values. They are considered simple because they don't hold or collect other values, and operations
@@ -115,7 +113,7 @@ isNaN("two"); // prints => true, since the string of two is not a number
 * by reference.
 */
 var firstName = "Ryan";
-var fullName = firstname + " Moragas"; // firstName value is copied into a new variable
+var fullName = firstName + " Moragas"; // firstName value is copied into a new variable
 console.log(fullName); 
 // ^^ operations on primitive values return new primitive values
 var fullName = "John Doe";
@@ -128,5 +126,3 @@ var newArr = myArr; // value stored in newArr is a reference to myArr
 newArr.push(6);
 console.log(myArr); // prints => [1, 2, 3, 4, 5, 6,]
 // changing the value at newArr affects all references because its value is referenced to the same array
-
-//DONE! DELETE THIS LINE

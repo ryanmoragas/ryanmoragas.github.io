@@ -80,7 +80,7 @@ function makeContactList() {
             }
             
         },
-        //prints all names i
+        //returns all names in contactList with a line break seperating them
         printAllContactNames: function() {
             let all = [];
             for (let i = 0; i < contacts.length; i++){

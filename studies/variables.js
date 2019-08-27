@@ -48,7 +48,7 @@ console.log (varOne); // prints => one
 * cannot be left unassigned or undefined. They are block scoped, meaning they're pinned to the block
 * of code they are initialized in. They are assigned using the const keyword.
 */
-const myVar = 7; // initializing a constant variable 
+let myVar = 7; // initializing a constant variable 
 console.log(myVar); // prints => 7
 myVar = 8;
 console.log(myVar); // returns an error, since reassigning constants is not possible
@@ -61,9 +61,7 @@ console.log(myVar); // returns an error, since reassigning constants is not poss
 */
 console.log(name); // prints => undefined //
 var name = "ryan"; //the varaible declaration was hoisted to the top, but not the initialization
-console.log(num); // prints => reference error //
+//console.log(num); // prints => reference error //
 let num = 5; // since let isn't hoisted, the declaration was not available for the previous console.log
-
-//DONE! DELETE THIS LINE
 
 

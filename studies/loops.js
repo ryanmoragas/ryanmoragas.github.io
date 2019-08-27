@@ -31,14 +31,18 @@ for (var i = 1; i <= 5; i++){
 }; // prints => 1, 2, 3, 4, 5, 
 // ^^ Here we get the same results that we got with our while loop, but used a for loop
  
+/*
 for (var key in object){
     console.log(key);
 };
+*/
 // ^^ Here we have created a for in loop, and have it printing each key in the object one by one
 
+/*
 for (var key in object){
     console.log(object[key]);
 };
+*/
 // ^^ Here we have another for in loop, but have it printing the value in each key in the object one by one
 
 // 2.Looping any number of times, forward counting up to some limit, backward counting down to 0 //
@@ -88,5 +92,3 @@ for (var key in myName){
     console.log(myName[key]);
 }; // prints => Ryan, Joel, Moragas
 // ^^ here we used a for-in loop to return the values in each key in myName
-
-//DONE! DELETE THIS LINE
