@@ -16,7 +16,7 @@
 var animal = {};
 animal.species = "dog"; //use dot notation to assign species to animal with property
 //use bracket notation to give animal property called name with a name value
-animal['name'] = "Bob";
+animal['name'] = "Roscoe";
 //using either notation give animal property of noises with empty array value
 animal.noises = [];
 console.log(animal);//print animal with console.log
@@ -76,7 +76,7 @@ var duck = {species: 'duck', name: 'Jerome', noises: ['quack', 'honk', 'sneeze',
 animals.push(duck);
 console.log(animals);
 //create two more animal species with names and two sounds
-var elephant = {species: 'elephant', name: 'Dumbo', noises: ['blow', 'squeel']};
+var elephant = {species: 'elephant', name: 'Dumbo', noises: ['whine', 'blow']};
 var cat = {species: 'cat', name: 'Jeff', noises: ['meow', 'hiss']};
 //add both animals to animals
 animals.push(elephant,cat);

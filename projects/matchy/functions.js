@@ -12,14 +12,12 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
 /*
 * Create a function named search that has two parameters, animals and name.
 * The function will search in an array (animals) for a certain name in the name key.
 * If found, the function will return the object that the name is in, if not 
 * found, the function will return null.
 */
-
 function search(animals, name){
     for (var i = 0; i < animals.length; i++)
     if (animals[i].name === name){
@@ -27,44 +25,36 @@ function search(animals, name){
     } 
         return null;
 }
-
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
 /*
 * Create a function named replace that takes 3 parameters, replace, name, and replacement.
 * If the animal with the name exists, replace it's entire object with the replacement 
 * object, otherwise do nothing
 */
-
 function replace(animals, name, replacement){
     for (var i =0; i < animals.length; i++)
     if (animals[i].name === name){
         animals[i] = replacement;
     }
 }
-
 //////////////////////////////////////////////////////////////////////
-// Step 3 - Remove ///////////////////////////////////////////////////
+// Step 3 - Remove *** ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
 /* 
 * Create function named remove with parameters animals and name. If the animal name
 * exists, remove it.
 */
-
 function remove(animals, name){
     for (var i = 0; i < animals.length; i++)
     if (animals[i].name === name){
        animals.splice(i,1);
     }
 }
-
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Create ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
 /*
 * Create function named add with parameters animals, animal. Function checks if 
 * new animals has a name with a length > 0, and has a unique name that no other animals
@@ -78,11 +68,6 @@ function add(animals, animal){
         return null;
     }
 }
-
-/**
- * You did it! You're all done with Matchy!
- */
-
 //////////////////////////////////////////////////////////////////////
 // DON'T REMOVE THIS CODE ////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////

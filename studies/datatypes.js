@@ -69,7 +69,7 @@ function functionName (param) {
 };
 // ^^ functions are given a name, parameters to use, and code to execute.
 function add (a, b) {
-    sum = a + b;
+    let sum = a + b;
     return sum;
 };
 // ^^ function named add will add the two parameters and return the sum
@@ -126,3 +126,10 @@ var newArr = myArr; // value stored in newArr is a reference to myArr
 newArr.push(6);
 console.log(myArr); // prints => [1, 2, 3, 4, 5, 6,]
 // changing the value at newArr affects all references because its value is referenced to the same array
+
+// 10. Infinity and -Infinity //
+/*
+ * Infinity and -Infinity are global properties, greater than any number
+ * Infinity operates as a mathematical infinity, and -Infinity as the inverse
+ */
+console.log(Infinity * -Infinity); // logs => -Infinity

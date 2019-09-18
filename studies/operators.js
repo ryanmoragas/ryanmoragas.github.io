@@ -25,8 +25,8 @@ console.log(num); // prints => 3
 var numTwo = 5; //initializes numTwo to the numeric value of 5
 var product = num * numTwo; // uses the multiplication operator to multiple two vaiables
 console.log(product); // prints => 10
-
-// 3. Comparison operators //
+numTwo - num; // uses subtraction method to return 2
+10 / 2; // uses division method to return 5
 /*
 * JavaScript has both strict and type–converting comparisons. A strict comparison (===) is only 
 * true if the operands are of the same type and the valuess match. The more commonly used 
@@ -38,6 +38,8 @@ console.log(product); // prints => 10
 num === 2; // returns a true statement, since the num variable is now equal to 2
 numTwo === 2; // returns false, since numTwo has a value of 5
 numTwo >= num; // returns true, since 5 is greater than 2
+numTwo <= num; //returns false, since 5 is not greater than 2
+num !== numTwo // returns true, since the numbers do not strictly equal each other
 
 // 4. Logical operators //
 /*
@@ -48,12 +50,17 @@ var hour = 8;
 var isWeekend = true;
 
 if (hour < 9 || hour > 18 || isWeekend) {
-  console.log( 'School is closed.' );
+  console.log("School is closed."); 
+} else if (1 === "1" && 1 === 1) {
+    console.log("Something is wrong");
 }
 /*
 * Here we give the command that if the hour is less than 10 OR greater than 18 OR if it
-* is the weekend, log the output School is closed.
+* is the weekend, log the output School is closed. We also have a contitional that
+* won't print using the && operator, since one of the comparisons are between a 
+* string and a number.
 */
+
 
 // 5. Unary operators (!, typeOf, -) //
 /* 

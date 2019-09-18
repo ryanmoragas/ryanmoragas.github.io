@@ -59,9 +59,12 @@ console.log(myVar); // returns an error, since reassigning constants is not poss
 * scope. Hoisting only moves declaration to the top not initializations. Only variables using var are 
 * hoisted, let and const variables are not.
 */
-console.log(name); // prints => undefined //
-var name = "ryan"; //the varaible declaration was hoisted to the top, but not the initialization
+name = "Bob"; //assigns name, a variable declared lower but hoisted to the top
+console.log(name); // prints => "Bob" //
+var name = "Ryan"; //the varaible declaration was hoisted to the top, but not the initialization
 //console.log(num); // prints => reference error //
 let num = 5; // since let isn't hoisted, the declaration was not available for the previous console.log
+
+
 
 
